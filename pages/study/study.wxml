@@ -1,0 +1,132 @@
+<!--pages/study/study.wxml-->
+<view class="navbar">
+ <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<!--全部-->
+<view hidden="{{currentTab!==0}}">
+    <image src="../image/7.jpg" style="width:100%;height:170px" ></image>
+    <view style="display: inline-block;">
+    <input class="t" placeholder="请输入要搜索的法律" type="text"/>
+    </view>
+    <view style="display: inline-block;">
+    <button class="search" size='mini' style='width: 150rpx;font-size: 30rpx;'>搜索</button>
+    </view>
+    <button class="fenlei" size='mini' style='width: 150rpx;font-size: 30rpx;'>刑法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>民商法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>经济与金融法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>国家安全与国防法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>环境法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>涉农法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>诉讼与仲裁法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>宪法与组织法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>行业法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>行政法类</button>
+    <button class="fenlei" size='mini' style='font-size: 30rpx;'>医疗卫生与应急管理法类</button>
+</view>
+<!--宪法-->
+<view hidden="{{currentTab!==1}}">
+    <scroll-view scroll-y style="height:700px;">
+    <view class="falv" bindtap='gotoxianfa' style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">中国人民共和国宪法 序言</view>
+    <view class="text1">136146阅读    1455赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/2.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">中国人民共和国宪法 第一章</view>
+    <view class="text2">总纲</view>
+    <view class="text1">139829阅读    1330赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/2.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">中国人民共和国宪法 第二章</view>
+    <view class="text2">公民的基本权利和义务</view>
+    <view class="text1">138889阅读    1142赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/2.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">中国人民共和国宪法 第三章</view>
+    <view class="text2">国家机构 第一节 全国人民代表</view>
+    <view class="text1">136766阅读    1096赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/2.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">中国人民共和国宪法 第三章</view>
+    <view class="text2">国家机构 第二节 中国人民共和国主席</view>
+    <view class="text1">115253阅读    1218赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/2.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">中国人民共和国宪法 第三章</view>
+    <view class="text2">国家机构 第三节 国务院</view>
+    <view class="text1">112665阅读    1162赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/2.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">中国人民共和国宪法 第三章</view>
+    <view class="text2">国家机构 第四节 中央军事委员会</view>
+    <view class="text1">134558阅读    1208赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/2.jpg"></image></view>
+    </view>
+</scroll-view>
+</view>
+<!--民法典-->
+<view hidden="{{currentTab!==2}}">
+    <scroll-view scroll-y style="height:700px;">
+    <view class="falv" bindtap='gotominfa' style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">民法典 第一章 基本规定</view>
+    <view class="text1">299080阅读    2059赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/3.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">民法典 第二章 自然人</view>
+    <view class="text1">156380阅读    1079赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/3.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">民法典 第三章 法人</view>
+    <view class="text1">125902阅读    792赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/3.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">民法典 第四章 非法人组织</view>
+    <view class="text1">94678阅读    584赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/3.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">民法典 第五章 民事权利</view>
+    <view class="text1">91975阅读    495赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/3.jpg"></image></view>
+    </view>
+    <view class="falv" style="display: flex;">
+    <view style="display: inline-block;">
+    <view class="text">民法典 第六章 民事法律行为</view>
+    <view class="text1">82866阅读    369赞</view>
+    </view>
+    <view style="display: inline-block;"><image class="img1" src="../image/3.jpg"></image></view>
+    </view>
+</scroll-view>
+</view>

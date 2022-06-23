@@ -1,0 +1,35 @@
+/* pages/falv/falv.wxss */
+.A{
+    flex-flow:row nowrap;
+    justify-self:space-around;
+    margin-top: 20px;
+}
+.img1{
+    width: 200rpx;
+    height: 160rpx;
+    border: 1px solid black;
+    margin-top: 10rpx;
+    margin-right: 2px;
+}
+.text{
+    font-size:6.0mm;
+    font-stretch:semi-condensed;
+    font-weight: 550;
+    margin-top: 10px;
+}
+.text1{
+    margin-top:30rpx;
+    margin-left: 50rpx;
+  }
+.recommend{
+    border: 2px solid rgb(230, 226, 226);
+    white-space: nowrap;
+    margin-left: 30rpx;
+  }
+.text2{
+    margin-top:20rpx;
+    font-size: smaller;
+    color: rgb(170, 158, 158);
+    font-size: 3.0mm;
+    margin-left: 50rpx;
+  }

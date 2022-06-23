@@ -1,0 +1,10 @@
+<!--pages/zixun/zixun.wxml-->
+<image src="../image/4.jpg" style="width:100%;height:165px" ></image>
+<view class="text">留言咨询</view>
+<form bindsubmit="onSubmit">
+<input name="title" class="text1" placeholder="标题" type="text" />
+<input name="question" class="text2" placeholder="请在这里描述您需要咨询的问题" type="text"/>
+<button type="primary" size="mini" bindtap="bindUpload">上传图片</button>
+<image src="{{src}}"></image>
+<button class="sub" form-type="submit">提交</button>
+</form>

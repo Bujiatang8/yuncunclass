@@ -1,0 +1,10 @@
+input{
+    border: 1px solid gray;
+  }
+  .line{
+    margin: 0 auto;
+    height: 1rpx;
+    margin-top: 10rpx;
+    margin-bottom: 5rpx;
+    background-color: #D8D8D8;
+  }

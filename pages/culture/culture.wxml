@@ -1,0 +1,15 @@
+
+<view style="font-family: cursive;text-align: center;font-size: 25px;font-weight: bolder; ">{{culture.name}}</view>
+<view style="margin: 15rpx;">简介：{{culture.introduction}}</view>
+<!-- 视频 -->
+<view style="text-align: center;">
+    <video src="{{culture.video}}"></video>
+</view>
+<view style="margin: 15rpx;font-size: small;">{{culture.detail}}</view>
+更新信息
+<input bindinput="getIntroduction"></input>
+<button type="mini" bindtap="update">更新信息</button>
+<view class="line"></view>
+<button bindtap="shanchu" type="mini">删除信息</button>
+
+

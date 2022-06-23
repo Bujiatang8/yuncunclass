@@ -1,0 +1,47 @@
+
+<!-- 图片滚动 -->
+<view class ="wenhuaPic">
+<swiper style="height: 400rpx;" indicator-dots="True" autoplay="True" interval="2000" circular  >
+    <swiper-item wx:for="{{swiperlist}}" wx:key="key">
+        <image mode="widthFix" src="{{item}}"></image>
+    </swiper-item>
+</swiper>  
+</view>
+<!-- 菜单 -->
+<view class="pageview">
+  <view class="list">
+    <view>
+      <block wx:for="{{weblist}}"wx:key="key" >
+        <view class="column" bindtap="click" data-num="{{item.url}}">
+          <view class="icon"><image src="{{item.imgsrc}}"></image></view>
+          <view class="text" >{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+ 
+</view>
+
+<!-- 视频播放 -->
+<view style=" text-align: center; width: 100%;">
+    <video src="https://vd2.bdstatic.com/mda-kjg8rnwudpwhwf4u/hd/mda-kjg8rnwudpwhwf4u.mp4?v_from_s=hkapp-haokan-hnb&amp;auth_key=1655432169-0-0-d9f3e1d866d32220925eb18e128677f5&amp;bcevod_channel=searchbox_feed&amp;pd=1&amp;cd=0&amp;pt=3&amp;logid=2769038441&amp;vid=13364516906205935340&amp;abtest=102599_2-102777_1-102784_2-102836_3-17451_2-3000232_2&amp;klogid=2769038441"></video>
+</view>
+
+<!-- 中华传统文化及简介列表 -->
+<view style="font-family: cursive; text-align: center;font-size: 30px;font-weight:600 ;color: rgb(216, 129, 71);">
+文化一览</view>
+<view style="font-size: small;color: royalblue; " >温馨提示：点击文化可查看相关介绍及视频</view>
+<view class="line"></view>
+<view style="margin-left: 15rpx;margin-right: 5rpx;" wx:for="{{list}}" wx:key="key">
+    <view style="line-height: 35rpx;font-size: small;" bindtap="goDetail" 
+    data-_id="{{item._id}}">{{item.name}}——简介：{{item.introduction}}
+        <view class="line"></view>
+    </view>
+</view>
+
+<input style="margin: 10rpx" placeholder="请输入文化名" value="{{addtext}}" bindinput="getName"></input>
+<input style="margin-left: 10rpx;margin-right: 10rpx;" placeholder="请输入文化简介" value="{{addtext}}" bindinput="getIntroduction"></input>
+
+<view  style="text-align: center;">
+    <button bindtap="addCulture" size="mini" type="primary">添加信息</button>
+</view>

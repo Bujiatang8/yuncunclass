@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/qiandao/qiandao",
+        "pages/culture/culture",
+        "pages/falv/falv",
+        "pages/cart/cart",
+        "pages/index/like/like",
+        "pages/index/setting/setting",
+        "pages/shipin/shipin",
+        "pages/study/study",
+        "pages/xianfa/xianfa",
+        "pages/minfa/minfa",
+        "pages/zixun/zixun",
+        "pages/tuijian/tuijian"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "云村课堂"
+    },
+    "tabBar": {
+        "color": "#666666",
+        "selectedColor": "ff9999",
+        "backgroundColor": "#CCCCCC",
+        "list": [
+            {
+                "text": "传统文化",
+                "pagePath": "pages/index/index",
+                "iconPath": "images/p4.png",
+                "selectedIconPath": "images/tu.png"
+            },
+            {
+                "text": "普法学习",
+                "pagePath": "pages/falv/falv",
+                "iconPath": "images/p1.png",
+                "selectedIconPath": "images/tu.png"
+            },
+            {
+                "text": "个人信息",
+                "pagePath": "pages/cart/cart",
+                "iconPath": "images/p3.png",
+                "selectedIconPath": "images/tu.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

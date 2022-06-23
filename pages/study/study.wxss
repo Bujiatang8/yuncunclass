@@ -1,0 +1,72 @@
+/* pages/study/study.wxss */
+page{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+   }
+.navbar{
+    flex: none;
+    display: flex;
+    background: #fff;
+   }
+.navbar .item{
+    position: relative;
+    flex: auto;
+    text-align: center;
+    line-height: 80rpx;
+   }
+.navbar .item.active{
+    color: #FFCC00;
+   }
+.navbar .item.active:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rpx;
+    background: #FFCC00;
+   }
+.img1{
+    width: 200rpx;
+    height: 160rpx;
+    border: 1px solid black;
+    margin-top: 10rpx;
+    margin-right: 2px;
+}
+.text{
+    margin-top:30rpx;
+    margin-right: 10rpx;
+  }
+.falv{
+    border: 2px solid rgb(230, 226, 226);
+    white-space: nowrap;
+    justify-content:space-between;
+  }
+.text1{
+    margin-top:20rpx;
+    font-size: smaller;
+    color: rgb(170, 158, 158);
+    font-size: 3.0mm;
+  }
+.text2{
+    margin-right: 10rpx;
+    font-size:4.0mm;
+  }
+.t{
+    margin-top: 5px;
+    border:1px solid gray;
+    width:595rpx;
+    height:35px;
+    border-radius: 5px;
+  }
+.search{
+    height:35px;
+    background-color: rgb(224, 219, 216);
+  }
+.fenlei{
+    height:28px;
+    margin-left: 3px;
+    background-color: rgb(238, 237, 236);
+  }

@@ -1,0 +1,19 @@
+/* pages/minfa/minfa.wxss */
+.text1{
+    margin-top:20rpx;
+    font-size: smaller;
+    color: rgb(170, 158, 158);
+    font-size: 3.0mm;
+  }
+.text{
+    font-size:4.8mm;
+    font-stretch:semi-condensed;
+    margin-left: 30rpx;
+    font-weight: 550;
+  }
+.image{
+    width:70rpx;
+    height:70rpx;
+    position: absolute;
+    right:20px;
+}
